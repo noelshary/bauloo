@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bauloo-styles",
+  "version": "${version}",
+  "name": "Bauloo Styles",
+  "description": "Chat-, HUD- und Menü-Styles für Minecraft – komplett konfigurierbar über ModMenu.",
+  "authors": ["Bauloo"],
+  "contact": {
+    "sources": "https://github.com/Bauloo0/bauloo-styles"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.bauloo.styles.BaulooStylesClient"],
+    "modmenu": ["de.bauloo.styles.ModMenuIntegration"]
+  },
+  "mixins": ["bauloo-styles.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
